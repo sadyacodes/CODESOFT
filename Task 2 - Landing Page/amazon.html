@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Amazon - Online Shopping</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', sans-serif; background: #f5f5f5; color: #333; }
+
+    nav {
+      background: #232f3e;
+      padding: 12px 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    nav a:hover { color: #febd69; }
+
+    header {
+      height: 85vh;
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://1000logos.net/wp-content/uploads/2016/10/Amazon-Logo-2000.png') center/contain no-repeat;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+    }
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 15px;
+    }
+    header p {
+      font-size: 1.3em;
+      margin-bottom: 25px;
+    }
+
+    .cta a {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 25px;
+      border-radius: 30px;
+      background: #febd69;
+      color: #000;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .cta a:hover {
+      background: #f3a847;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    section h2 {
+      font-size: 2em;
+      text-align: center;
+      color: #222;
+      margin-bottom: 30px;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .feature-box {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .feature-box i {
+      font-size: 2em;
+      color: #f08804;
+      margin-bottom: 10px;
+    }
+    .feature-box h3 {
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background: #232f3e;
+      color: #fff;
+      text-align: center;
+      padding: 20px 10px;
+      margin-top: 50px;
+    }
+    .social-icons a {
+      color: #fff;
+      font-size: 1.5em;
+      margin: 0 12px;
+      transition: color 0.3s;
+    }
+    .social-icons a:hover {
+      color: #febd69;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 2.2em; }
+      section h2 { font-size: 1.6em; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#features">Features</a>
+    <a href="#deals">Deals</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header>
+    <h1>Welcome to Amazon</h1>
+    <p>Your one-stop shop for everything you need</p>
+    <div class="cta">
+      <a href="#features">Shop Now</a>
+      <a href="#deals">Today's Deals</a>
+    </div>
+  </header>
+
+  <section id="features">
+    <h2>Why Shop With Amazon?</h2>
+    <div class="features">
+      <div class="feature-box">
+        <i class="fas fa-shipping-fast"></i>
+        <h3>Fast Delivery</h3>
+        <p>Get your products delivered at lightning speed with our Prime service.</p>
+      </div>
+      <div class="feature-box">
+        <i class="fas fa-lock"></i>
+        <h3>Secure Payment</h3>
+        <p>Multiple payment options with end-to-end encryption for your safety.</p>
+      </div>
+      <div class="feature-box">
+        <i class="fas fa-sync-alt"></i>
+        <h3>Easy Returns</h3>
+        <p>Hassle-free returns within 30 days for most products.</p>
+      </div>
+      <div class="feature-box">
+        <i class="fas fa-tags"></i>
+        <h3>Best Deals</h3>
+        <p>Save more with exciting discounts, offers, and lightning deals daily.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Amazon</h2>
+    <p>Amazon is a global leader in e-commerce and cloud computing, providing customers with everything from A to Z. With millions of products, excellent customer service, and fast delivery, we aim to make your shopping experience seamless and delightful.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Need help? Reach out to our support team or visit the Help Center for assistance.</p>
+    <p>Email: support@amazon.com | Phone: 1800-3000-9009</p>
+  </section>
+
+  <footer>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+    <p>© 2025 Amazon Clone Project. For educational use only.</p>
+  </footer>
+</body>
+</html>
